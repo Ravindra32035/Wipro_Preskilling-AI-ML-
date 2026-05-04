@@ -1,0 +1,299 @@
+29/04/2026
+List of Topics :-
+
+Overview of computer Architecture :-
+----------------------------------
+Computer architecture is the design and organization of computer system components and how they interact to execute programs.
+It defines:-
+-->How data is processed
+-->How instructions are executed.
+-->How hardware and software communicate.
+key Layers-
+1.Hardware-physical components(CPU, memory I/O devices)
+2.Instruction set Architecture(ISA)- It is a interface between hardware and software.
+
+Importance in software development :-
+----------------------------------
+Software development is vital for driving business growth, ensuring operational efficiency, improving customer experience through personalization, and enabling innovation. It automates tasks, secures data, and enables digital transformation across industries. Key synonyms include necessity, significance, value, and criticality. 
+
+Basic Terminology:-
+-------------------
+Bit- smallest unit (0 or 1)
+Byte- 8bits
+word- CPU's natural data size(32 or 64)
+Memory- stores data and instructions.
+Bus- It is a communication pathway between components: Data bus, Address bus, Control bus.
+clock- Synchronizes operations.
+
+Central Processing unit :-
+-------------------------
+The CPU is the brain of the computer that:
+->Executes instructions
+->performs calculations
+->controls system operations.
+
+CPU Components and Functions:-
+-----------------------------
+1.ALU(Arithmetic Logic Unit):-The ALU is the digital circuit within the processor responsible for performing all mathematical and logical operations.
+Key Functions:
+Arithmetic Operations: Addition, subtraction, multiplication, and division.
+Logical Operations: Comparisons such as AND, OR, NOT, XOR, and checking for equality (equal-to, less-than, greater-than).
+Bit-Shifting: Moving bit locations left or right to perform fast multiplication or division.
+
+2.Control Unit (CU):-The CU is the part of the CPU that acts as the "brain" or supervisor, managing the flow of data and instructions within the computer.
+Key Functions:
+Instruction Fetching/Decoding: It fetches instructions from memory, interprets them, and converts them into control signals.
+Data Flow Management: Directs the movement of data between memory, ALU, and input/output devices.
+Timing and Synchronization: Controls the timing of operations within the CPU to ensure proper execution sequence.
+
+3.Registers:- Extremely fast, small storage locations directly inside the CPU that hold data immediately required for processing, such as instruction pointers and intermediate results.
+
+4.Cache Memory:- High-speed memory located on or near the processor chip that stores frequently accessed data to prevent the CPU from waiting on slower RAM.
+
+5.Bus:- A communication system that transfers data between the CPU and other components like RAM.
+
+6.Clock: Generates pulses (measured in GHz) that synchronize the timing and speed of all CPU operations.
+
+
+How a CPU Executes Instructions:-
+-------------------------------
+
+Fetch->Decode->Execute->store.
+
+Fetch:-
+------
+CPU gets instructions from memory
+Address stored in Program Counter(PC)
+
+Decode:-
+------
+control unit interprets instruction
+
+Execute:-
+-------
+ALU or other unit performs operations.
+
+Store:-
+-----
+Result is stored in memory/register
+
+*This cycle repeats millions or billions of times per second.
+
+CPU Performance Factors:-
+-----------------------
+CPU performance is primarily determined by clock speed (cycles per second), the number of processing cores, and cache memory size.
+
+clock speed:-
+*Number of cycles per second 
+*Higher = Faster.
+
+Number of cores:-
+*More cores = parallel processing.
+
+Cache Size:-
+Larger cache reduces memory access time
+Three levels : L1,L2,L3
+
+Instruction Set Architecture:-
+Determines Efficiency of operations
+
+
+Core Layers in Layered Architecture:-
+-------------------------------------
+Presentation Layer (UI Layer): This topmost layer handles user interactions, displaying information and receiving commands (e.g., UI, web pages, APIs). 
+
+Application/Service Layer: Coordinates activities, handling business logic flows and serving as the intermediary between the presentation and data layers. 
+
+Domain/Business Logic Layer: Encapsulates core business rules, policies, and calculations (e.g., "calculate interest"). 
+
+Data/Persistence Layer: Manages data storage and retrieval, interacting with databases to ensure separation of data concerns. 
+
+
+
+Cache:-
+-----
+Cache memory is high-speed, temporary storage that improves performance by keeping frequently accessed data.
+Example:-like the Amazon homepage—immediately available, preventing slow re-downloads. When a user visits Amazon daily, their browser caches images, CSS, and scripts locally, making the site load instantly on repeat visits.
+
+
+Input/Output Systems:-
+--------------------
+Input and output (I/O) systems act as the communication bridge between a computer's CPU and external devices, enabling data entry (input) and result presentation (output). Input devices (keyboard, mouse) send data into the system for processing, while output devices (monitor, printer) display or produce the results.
+
+
+Overview of I/O Systems:-
+-----------------------
+An Input/Output system consists of both hardware and software compnents that manages the data transfer.
+Main Functions:-
+->Accept input from user/devices
+->Deliver output to user/devices
+->Manage communication efficiently
+->Handle errors and device control.
+
+Components of I/O Systems:
+I/O devices-input, output, storage.
+Device cntrls-Hardware that controls a specific device
+Device drivers-Software that tells the OS how to communicate with devices.
+System bus- Connects CPU, Memory and I/O Devices.
+
+
+Communication between CPU, Memory and I/O devices:-
+-------------------------------------------------
+
+Communication happens through buses and control signals in a structured way.
+System Bus Structure
+*Data Bus->Transfer data
+*Address Bus->Carries location of data/devices.
+*Control Bus->Send Control Signals(Read/Write, Interrupt)
+
+**How Communication works**
+     Input Operation
+1.user gives input(eg. through keyboard)
+2.device sends it data to controller 
+3.controller transfers data to CPU via bus
+4.CPU stores data in memory
+5.program access the data
+
+     Output operation
+1.CPU processes data
+2.sends result to device controller
+3.controller converts data into device-specific form
+4.output device displays/prints result.
+
+**Modes of Data Transfer**
+1.Programmed I/O
+	CPU continuously checks device status
+	Simple but inefficient
+2.Interrupt driven I/O
+	Device sends an interrupt signal when ready
+	CPU temporarily stops current task to handle it 
+	More efficient than polling 
+3.Direct Memory Access(DMA)
+	Data transfers directly between memory and device
+	CPU involvement is minimal
+	Used for high-speed devices
+
+Computer Networking:-
+-------------------
+-->Computer Networking is the practice of connecting multiple computers and devices together so they can communicate, share data and share resources like file, printers and internet access.
+-->Computer networking is the interconnection of devices (computers, servers, phones, routers, switches) to share data and resources such as files or internet access.
+*Simply CN allows computers to talk to each other.
+
+
+What is Networking?
+------------------
+Networking generally refers to the process of connecting entities—either devices or people—to share resources, data, or information. In technology, it means linking computers and devices (wired or wireless) to communicate, while in a professional context, it involves building relationships for career growth. 
+-->Resource sharing, communication, Centralized data management, Internet access, Cloud computing.
+
+
+Basic Networking Concepts are:-
+-----------------------------
+1.Node/Host - 
+	Any device connected to a network
+	Ex:- Computer, mobile, server.
+
+2.IP Address -
+	A unique identifier for each device on a network
+	Ex:- IPV4(192.168.1.1), IPV6(Longer format)
+
+3.MAC Address -
+	Physical address of a device(hardcoded)
+	unique for each network interface
+
+4.Bandwidth -
+	Maximum data transfer rate
+	Measured in Mbps or Gbps
+
+5.Latency -
+	Time taken for data to travel
+	Lower latency=faster response
+
+6.Topology(Network Structure) -
+	Stare, bus, mesh, Ring.
+
+7.Transmission Media -
+	wired:- Ethernet cables, Fiber Optics.
+	Wireless:- Wi-Fi, Bluetooth.
+
+8.Protocol -
+	Rules that define how data is transmitted between devices.
+	Ex:- HTTP, FTP.
+
+Network Models:-
+--------------
+Network models defines how communication happens between models.
+
+Physical Layer: Deals with raw bit transmission over physical media.
+Data Link Layer: Manages frame creation, error detection and medium access.
+Network Layer: Handles routing and forwarding of packets (e.g., IP).
+Transport Layer: Ensures reliable data transfer (e.g., TCP).
+Session Layer: Manages sessions between devices.
+Presentation Layer: Handles data formatting, encryption and compression.
+Application Layer: Provides end-user services (e.g., HTTP, FTP).
+
+
+Software Development Lifecycle :
+The software development lifecycle (SDLC) is a structured and iterative methodology used by development teams to build, deliver and maintain high-quality and cost-effective software systems.
+
+Planning - Gathering the Requirements Document from client.
+Analysis - Making Technical Document like how many classes, interfaces, Technical team is required.
+Development - Coding phase (SSE&SE)
+Testing - Q/A Testing Team
+Deployment - deploy the code to server(Go live)
+Maintenance - Any bugs are addressed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+What is Python?
+Python is a high-level, interpreted programming language known for its simple syntax and readability.
+It is used for - Web development, Data analysis, Automation, Ai&Ml.
+
+Advantage of Python:
+Easy to learn and use(simply syntax)
+Platform Independent(runs on any OS)
+Large Library Support(NumPy, Pandas)
+Supports Multiple Paradigm(OOP, functional)
+Strong community support.
+
+Python in AI&ML:
+1.Data Analysis - Python processes large datasets using libraries like Pandas and NumPy
+
+2.Machine Learning Models - Used to build models with libraries like Scikit-learn.
+
+3.Deep Learning - Frameworks like TensorFlow and PyTorch are built on python
+
+4.Natural Language Processing(NLP) - Used in chatbots, translation, sentiment analysis.
+
+5.Computer Vision - Used for image recognition, face detection using libraries like OpenCV.
+
+
+
+
+list
+------
+A list in Python is a built-in data type used to store a collection of items in a single variable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,278 @@
+05/05/26
+--------
+ 
+
+What is an Algorithm in Programming?
+
+An algorithm is a "step-by-step procedure or set of instructions used to solve a specific problem" or perform a computation. It takes input, processes it through defined steps, and produces an output.
+
+Key characteristics of an algorithm:
+
+--> Input - Takes zero or more inputs
+--> Output - Produces at least one result
+--> Definiteness - Steps are clear and unambiguous
+--> Finiteness - Terminates after a finite number of steps
+--> Effectiveness - Each step is basic and feasible
+
+
+
+Classification of Algorithms
+
+Algorithms can be classified mainly in two ways:
+
+1. Design Strategies (How the algorithm is built)
+-------------------------------------------------
+
+1.Brute Force Algorithms
+
+Idea: Try all possible solutions and pick the best one.
+When used: When the problem size is small or no efficient solution exists.
+Example:
+Finding the largest number in an array by checking each element.
+arr = [3, 7, 2, 9, 5]
+max_val = arr[0]
+for num in arr:
+    if num > max_val:
+        max_val = num
+print(max_val)
+
+
+2.Divide and Conquer Algorithms
+
+Idea: Break problem into smaller subproblems, solve them, and combine results.
+When used: Sorting, searching, large datasets.
+Example:
+Merge Sort – sorting a list.
+
+
+
+3.Greedy Algorithms
+
+Idea: Make the best choice at each step without reconsidering previous choices.
+When used: Optimization problems.
+Example:
+Coin Change Problem (minimum coins for amount using largest coins first).
+
+
+
+4.Dynamic Programming (DP)
+
+Idea: Store results of subproblems to avoid recomputation.
+When used: Overlapping subproblems and optimal substructure.
+Example :
+Fibonacci sequence
+def fib(n):
+    dp = [0]*(n+1)
+    dp[1] = 1
+    for i in range(2, n+1):
+        dp[i] = dp[i-1] + dp[i-2]
+    return dp[n]
+
+5.Backtracking Algorithms
+
+Idea: Try solutions, and if one fails, go back (undo) and try another.
+When used: Constraint problems.
+Example:
+N-Queens Problem or solving a maze.
+
+
+
+6.Randomized Algorithms
+
+Idea: Use randomness to improve performance or simplicity.
+When used: Large data, probabilistic solutions.
+Example:
+Randomized QuickSort (random pivot selection).
+
+
+
+7.Recursive Algorithms
+
+Idea: Function calls itself to solve smaller instances.
+When used: Tree traversal, factorial, divide & conquer.
+Example:
+Factorial
+def fact(n):
+    if n == 0:
+        return 1
+    return n * fact(n-1)
+
+
+
+2. Problem Types (What kind of problem is solved)
+-------------------------------------------------
+
+1. Searching Algorithms
+Goal: Find an element.
+Example:
+Linear Search (Brute Force), Binary Search (Efficient).
+
+
+
+2. Sorting Algorithms
+Goal: Arrange data in order.
+Example:
+Bubble Sort, Merge Sort, Quick Sort.
+
+
+3. Optimization Algorithms
+
+Goal: Find best solution among many.
+Example:
+Shortest path in graphs (Dijkstra’s Algorithm).
+
+
+
+4. Graph Algorithms
+
+Goal: Work on graph data structures.
+Example:
+Depth First Search (DFS), Breadth First Search (BFS).
+
+
+5. String Algorithms
+
+Goal: Process text efficiently.
+Example:
+Pattern matching (KMP Algorithm).
+
+
+
+6. Numerical Algorithms
+
+Goal: Perform mathematical computations.
+Example:
+Finding GCD using Euclid’s Algorithm.
+
+-----------------------------------------------------------------------------------
+
+
+1.Search Algorithms
+
+Definition: Used to find a specific element in a dataset.
+Common Types: Linear Search, Binary Search
+Use Case: Finding a contact number in a phonebook.
+Example: Using Binary Search to quickly find a name in a sorted contact list.
+
+
+2.Sort Algorithms
+
+Definition: Used to arrange data in a specific order (ascending/descending).
+Common Types: Bubble Sort, Merge Sort, Quick Sort
+Use Case: Sorting student marks from highest to lowest.
+Example: Merge Sort used in large datasets for efficient sorting.
+
+
+3.Computational Algorithms
+
+Definition: Used to perform mathematical calculations and computations.
+Examples: GCD, Fibonacci, Factorial
+Use Case: Calculating interest or scientific computations.
+Example: Finding GCD of two numbers in cryptography.
+
+
+4.Collection Algorithms
+
+Definition: Operate on collections like lists, arrays, sets.
+Examples: Traversal, Filtering, Aggregation
+Use Case: Filtering even numbers from a list.
+Example: Removing duplicates from a list.
+
+
+5.Graph Algorithms
+
+Definition: Used to process graph data structures (nodes and edges).
+Common Types: BFS, DFS, Dijkstra
+Use Case: Finding shortest path in maps.
+Example: Google Maps uses Dijkstra’s Algorithm.
+
+
+6.Dynamic Programming Algorithms
+
+Definition: Solve problems by breaking them into overlapping subproblems and storing results.
+Examples: Fibonacci, Knapsack
+Use Case: Optimizing resource allocation.
+Example: Knapsack Problem in maximizing profit.
+
+
+
+7.Greedy Algorithms
+
+Definition: Make the best choice at each step to find optimal solution.
+Examples: Kruskal’s, Prim’s
+Use Case: Selecting minimum cost network connections.
+Example: Building minimum spanning tree using Prim’s Algorithm.
+
+
+
+8.Pattern Searching Algorithms
+
+Definition: Used to find patterns in strings/text.
+Examples: KMP, Rabin-Karp
+Use Case: Searching a word in a document.
+Example: Finding “error” in log files using KMP Algorithm.
+
+
+9.Geometric Algorithms
+
+Definition: Deal with geometric shapes and spatial data.
+Examples: Convex Hull, Line Intersection
+Use Case: Computer graphics and GIS systems.
+Example: Finding boundary points using Convex Hull.
+
+
+
+10.Numerical Algorithms
+
+Definition: Used for numerical computations and approximations.
+Examples: Newton-Raphson, Matrix operations
+Use Case: Solving equations in engineering.
+Example: Finding square roots using Newton-Raphson Method.
+
+
+
+11.Encryption Algorithms
+
+Definition: Used to secure data by converting it into coded form.
+Examples: AES, RSA
+Use Case: Secure communication over internet.
+Example: RSA Algorithm used in online banking security.
+
+
+
+12.Machine Learning Algorithms
+
+what is ML? - ML is a subset of AI that enables system to learn from data,identify patterns and make decisions or predictions without being explicitly programmed for every task.
+
+Definition: Allow systems to learn patterns from data and make predictions.
+Examples: Linear Regression, Decision Trees
+Use Case: Recommendation systems.
+Example: Netflix recommending movies using ML algorithms.
+
+
+
+13.Data Compression Algorithms
+
+-->Reduce size of data files by identifying and eliminating statistical redundancy.
+-->They are broadly categorized into lossless methods, which allow perfect reconstruction of original data, and lossy methods,which discard less-essential information to achieve much higher compression ratios.
+Examples: Huffman Coding, Run-length Encoding(RLE),Lempel-Ziv-Welch(LZW).
+Use Case: Reducing file size.
+Example: ZIP files using Huffman Coding.
+
+
+
+14.Parallel and Distributed Algorithms
+
+Parallel and distributed algorithms improve computational efficiency and scalability  by dividing large tasks among multiple processors.
+
+Definition: Run computations across multiple processors or systems.
+Examples: MapReduce
+Use Case: Handling large-scale data processing.
+Example: Processing big data using MapReduce in distributed systems.
+
+
+* Search & Sort → Data handling
+* Graph & DP → Complex problem solving
+* Greedy → Fast optimization
+* ML & Encryption → Modern applications
+* Parallel → Large-scale systems
